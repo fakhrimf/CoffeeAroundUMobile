@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Coffee Around U</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">LOGIN</string>
+    <string name="no_account">No account?</string>
+    <string name="register_now">Register Now</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="full_address">Full Address</string>
+</resources>
