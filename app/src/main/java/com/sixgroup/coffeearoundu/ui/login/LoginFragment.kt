@@ -1,15 +1,14 @@
 package com.sixgroup.coffeearoundu.ui.login
 
 import android.content.Intent
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
-import com.sixgroup.coffeearoundu.R
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.sixgroup.coffeearoundu.RegisterActivity
 import com.sixgroup.coffeearoundu.databinding.FragmentLoginBinding
 
@@ -39,7 +38,7 @@ class LoginFragment : Fragment() {
         val w = requireActivity().window
         w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        w.statusBarColor = ContextCompat.getColor(requireActivity(), android.R.color.transparent)
+        w.statusBarColor = ContextCompat.getColor(requireActivity(), android.R.color.darker_gray)
         init()
     }
 

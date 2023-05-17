@@ -12,4 +12,7 @@
     <string name="name">Name</string>
     <string name="phone_number">Phone Number</string>
     <string name="full_address">Full Address</string>
+    <string name="coffee_around_you">Coffee Around You</string>
+    <string name="explore">Explore</string>
+    <string name="cafe_around_you">Cafe Around You</string>
 </resources>

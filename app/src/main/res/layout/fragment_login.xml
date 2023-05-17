@@ -15,6 +15,7 @@
         android:layout_margin="72dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/coffeebeans"
+        android:transitionName="APP_IMAGE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -69,7 +70,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailInput"
@@ -92,6 +94,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="17dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/ic_mail"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +145,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/darkBrown">
+                app:passwordToggleTint="@color/darkBrown"
+                tools:ignore="RtlSymmetry">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordInput"
@@ -165,6 +169,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="17dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/ic_lock"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -6,15 +6,17 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.core.app.ActivityOptionsCompat
 import androidx.core.content.ContextCompat
+import androidx.core.util.Pair
+import androidx.fragment.app.Fragment
 import com.sixgroup.coffeearoundu.LoginActivity
-import com.sixgroup.coffeearoundu.R
 import com.sixgroup.coffeearoundu.databinding.FragmentSplashBinding
+import com.sixgroup.coffeearoundu.utils.APP_IMAGE
 import com.sixgroup.coffeearoundu.utils.BACKGROUND_FADE
 import com.sixgroup.coffeearoundu.utils.TITLE_FADE
 
@@ -25,7 +27,7 @@ class SplashFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSplashBinding.inflate(inflater, container, false)
         return binding.root
@@ -41,7 +43,12 @@ class SplashFragment : Fragment() {
     }
 
     private val mRunnable = Runnable {
-        startActivity(Intent(requireContext(), LoginActivity::class.java))
+        val intent = Intent(requireContext(), LoginActivity::class.java)
+        val opt = ActivityOptionsCompat.makeSceneTransitionAnimation(
+            requireActivity(),
+            Pair.create(binding.ivSplash, APP_IMAGE)
+        )
+        startActivity(intent, opt.toBundle())
         requireActivity().finish()
     }
     private val mHandler = Handler(Looper.getMainLooper())
