@@ -12,6 +12,16 @@
     <string name="name">Name</string>
     <string name="phone_number">Phone Number</string>
     <string name="full_address">Full Address</string>
+    <string name="profile_account">Profile Account</string>
+    <string name="my_profile_account">My Profile Account</string>
+    <string name="username">Username</string>
+    <string name="phone_number_profile">+62438589248294829</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_profile_under">Tap to Edit Your Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_password_under">Tap to Change Your Password</string>
+    <string name="log_out">Log Out</string>
+    <string name="log_out_under">Tap to Logout</string>
     <string name="coffee_around_you">Coffee Around You</string>
     <string name="explore">Explore</string>
     <string name="cafe_around_you">Cafe Around You</string>
