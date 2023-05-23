@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail"
+        android:textSize="20dp"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibHeart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="104dp"
+        android:src="@drawable/heart"
+        app:layout_constraintStart_toEndOf="@+id/tvJudul"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDetailFoto"
+        android:layout_width="315dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/detail_coffee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
+
+    <TextView
+        android:id="@+id/tvCoffeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="32dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDetailFoto"
+        tools:text="Coffee Name" />
+
+
+    <ImageButton
+        android:id="@+id/ibRating"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/rating"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlace" />
+
+    <TextView
+        android:id="@+id/tvRatingScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/ibRating"
+        app:layout_constraintTop_toTopOf="@+id/ibRating"
+        tools:text="4.8"
+        />
+
+    <TextView
+        android:id="@+id/tvTotalRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvRatingScore"
+        app:layout_constraintTop_toTopOf="@+id/tvRatingScore"
+        android:paddingTop="2dp"
+        android:textSize="12dp"
+        android:textColor="@color/grey"
+        android:paddingLeft="3dp"
+        tools:text="(50)" />
+
+    <TextView
+        android:id="@+id/tvPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        tools:text="Place"
+        android:textColor="@color/grey"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCoffeeName" />
+
+    <ImageButton
+        android:id="@+id/ibBean"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/bean"
+        app:layout_constraintStart_toEndOf="@+id/tvCoffeeName"
+        app:layout_constraintTop_toBottomOf="@+id/ivDetailFoto" />
+
+    <ImageButton
+        android:id="@+id/ibMilk"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/milk"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ibBean"
+        app:layout_constraintTop_toBottomOf="@+id/ivDetailFoto" />
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/whitish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibRating" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garis"
+        android:textSize="16dp"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:text="@string/description" />
+
+    <TextView
+        android:id="@+id/tvDescriptionDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        tools:text="This Coffee is Creamy and Delicious" />
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+        android:textStyle="bold"
+        android:paddingTop="28dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionDetail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonS"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="2dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/size_small"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonM"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="2dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/size_medium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/buttonS"
+        app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonL"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="2dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/size_large"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/buttonM"
+        app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+
+    <Button
+        android:id="@+id/buttonPurchase"
+        android:layout_width="217dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/accent"
+        android:text="@string/purchase"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

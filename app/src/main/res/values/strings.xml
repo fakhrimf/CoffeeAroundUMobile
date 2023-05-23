@@ -15,4 +15,11 @@
     <string name="coffee_around_you">Coffee Around You</string>
     <string name="explore">Explore</string>
     <string name="cafe_around_you">Cafe Around You</string>
+    <string name="description">Description</string>
+    <string name="size">Size</string>
+    <string name="size_small">S</string>
+    <string name="size_medium">M</string>
+    <string name="size_large">L</string>
+    <string name="purchase">Purchase</string>
+    <string name="detail">Detail</string>
 </resources>
